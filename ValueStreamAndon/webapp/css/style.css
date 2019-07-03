@@ -1,0 +1,91 @@
+/* Enter your custom styles here */
+
+.sapUiVltCell.sapuiVltCell,
+#container-ValueStreamAndon---Main--containerLayout,
+#container-ValueStreamAndon---Main--BlockLayout {
+    height: 100% !important;
+    text-align: center;
+}
+
+#__row2, #__row3 {
+    height: 50% !important;
+}
+
+#__row0>div,  #__row1 >div , #__row3> div, #__row2> div{
+    height: 100%;
+}
+
+.sapUiBlockCellContent {
+    padding: 0.5rem !important;
+}
+
+h2#__cell1-Title, h2#__cell0-Title {
+	font-size: 30px;
+}
+
+h2#__cell2-Title{
+	font-size: 45px;
+}
+
+h2#__cell3-Title {
+	text-align: center;
+}
+
+div#__panel0-content {
+    padding: 0;
+}
+
+.negatives{
+	color: firebrick;
+}
+
+.positives{
+	color: darkgreen;
+}
+
+span#__text0, span#__text1{
+	font-size: 80px;
+}
+
+span#__text2{
+	font-size: 120px;
+}
+
+div#__cell3.sapUiBlockLayoutCell.sapUiBlockLayoutEvenCell.sapUiBlockHorizontalCell{
+	width: 20%;
+}
+
+div#__cell3 {
+	flex: 1.4 !important;
+}
+
+.sapUiBlockLayoutSizeXL:not(.sapUiBlockLayoutKeepFontSize) .sapUiBlockCellContent>.sapMText {
+    font-size: 3rem;
+}
+
+span#container-ValueStreamAndon---Main--difference {
+    text-align: left;
+    font-size: 6rem;
+}
+
+bdi#__label0-bdi, span#container-ValueStreamAndon---Main--weekTar, span#container-ValueStreamAndon---Main--remainingQTY, bdi#__label1-bdi {
+    font-size: x-large;
+}
+
+div#__container0--RFLayout {
+    background-color: peachpuff;
+}
+
+div#__container0--RFLayout {
+    display: inline-flex;
+    justify-content: space-around;
+}
+
+.sapUiRFL {
+ display: inline-flex !important;
+}
+
+.sapUiFormM:not(.sapUiFormEdit) .sapUiRFLContainerContent {
+    font-size: 1px;
+    display: inline;
+}

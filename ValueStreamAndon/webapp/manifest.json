@@ -1,0 +1,136 @@
+{
+	"_version": "1.12.0",
+	"sap.app": {
+		"id": "com.web.ValueStreamAndon",
+		"type": "application",
+		"i18n": "i18n/i18n.properties",
+		"applicationVersion": {
+			"version": "1.0.0"
+		},
+		"title": "{{appTitle}}",
+		"description": "{{appDescription}}",
+		"sourceTemplate": {
+			"id": "ui5template.basicSAPUI5ApplicationProject",
+			"version": "1.40.12"
+		},
+		"dataSources": {
+			"stackedBarData": {
+				"uri": "./model/data.json",
+				"type": "OData",
+				"settings": {
+					"odataVersion": "2.0",
+					"localUri": "com.sem.OEEDash.model/data.json",
+					"annotations": []
+				}
+			},
+			"stackedColumnData": {
+				"uri": "./model/QMDO_Arrears.json",
+				"type": "OData",
+				"settings": {
+					"odataVersion": "2.0",
+					"localUri": "com.sem.OEEDash.model/QMDO_Arrears.json",
+					"annotations": []
+				}
+			},
+			"lineGraphData": {
+				"uri": "./model/Output.json",
+				"type": "OData",
+				"settings": {
+					"odataVersion": "2.0",
+					"localUri": "com.sem.OEEDash.model/Output.json",
+					"annotations": []
+				}
+			}
+		}
+	},
+
+	"sap.ui": {
+		"fullWidth": true,
+		"technology": "UI5",
+		"icons": {
+			"icon": "",
+			"favIcon": "",
+			"phone": "",
+			"phone@2": "",
+			"tablet": "",
+			"tablet@2": ""
+		},
+		"deviceTypes": {
+			"desktop": true,
+			"tablet": true,
+			"phone": true
+		}
+	},
+
+	"sap.ui5": {
+		"flexEnabled": false,
+		"rootView": {
+			"viewName": "com.web.ValueStreamAndon.view.Main",
+			"type": "XML",
+			"async": true,
+			"id": "Main"
+		},
+		"dependencies": {
+			"minUI5Version": "1.60.1",
+			"libs": {
+				"sap.ui.layout": {},
+				"sap.ui.core": {},
+				"sap.m": {}
+			}
+		},
+		"contentDensities": {
+			"compact": true,
+			"cozy": true
+		},
+		"models": {
+			"i18n": {
+				"type": "sap.ui.model.resource.ResourceModel",
+				"settings": {
+					"bundleName": "com.web.ValueStreamAndon.i18n.i18n"
+				}
+			},
+			"stackedBarData": {
+				"type": "sap.ui.model.json.JSONModel",
+				"dataSource": "stackedBarData"
+			},
+			"stackedColumnData": {
+				"type": "sap.ui.model.json.JSONModel",
+				"dataSource": "stackedColumnData"
+			},
+			"lineGraphData": {
+				"type": "sap.ui.model.json.JSONModel",
+				"dataSource": "lineGraphData"
+			}
+		},
+		"resources": {
+			"css": [{
+				"uri": "css/style.css"
+			}]
+		},
+		"routing": {
+			"config": {
+				"routerClass": "sap.m.routing.Router",
+				"viewType": "XML",
+				"async": true,
+				"viewPath": "com.web.ValueStreamAndon.view",
+				"controlAggregation": "pages",
+				"controlId": "app",
+				"clearControlAggregation": false
+			},
+			"routes": [{
+				"name": "RouteView1",
+				"pattern": "RouteView1",
+				"target": ["TargetView1"]
+			}],
+			"targets": {
+				"TargetView1": {
+					"viewType": "XML",
+					"transition": "slide",
+					"clearControlAggregation": false,
+					"viewId": "Main",
+					"viewName": "Main"
+				}
+			}
+		}
+	}
+}

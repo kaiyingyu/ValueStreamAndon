@@ -1,0 +1,597 @@
+{
+  "Rowsets": {
+    "DateCreated": "2019-07-02T09:33:02",
+    "Version": "15.2 SP3 Patch 5 (24-Jan-2019)",
+    "StartDate": "2019-07-02T08:33:02+0100",
+    "EndDate": "2019-07-02T09:33:02+0100",
+    "CachedTime": "",
+    "Rowset": [
+      {
+        "Columns": {
+          "Column": [
+            {
+              "Name": "DAY",
+              "SourceColumn": "DAY",
+              "Description": "DAY",
+              "SQLDataType": 12,
+              "MinRange": 1.0,
+              "MaxRange": 1.0
+            },
+            {
+              "Name": "LOOP_TIME",
+              "SourceColumn": "LOOP_TIME",
+              "Description": "LOOP_TIME",
+              "SQLDataType": 92,
+              "MinRange": 1.0,
+              "MaxRange": 1.0
+            },
+            {
+              "Name": "WEEK_TARGET",
+              "SourceColumn": "WEEK_TARGET",
+              "Description": "WEEK_TARGET",
+              "SQLDataType": 4,
+              "MinRange": 1.0,
+              "MaxRange": 1.0
+            },
+            {
+              "Name": "FINISHED_WEEK",
+              "SourceColumn": "FINISHED_WEEK",
+              "Description": "FINISHED_WEEK",
+              "SQLDataType": 4,
+              "MinRange": 1.0,
+              "MaxRange": 1.0
+            },
+            {
+              "Name": "REMAINING_WEEK",
+              "SourceColumn": "REMAINING_WEEK",
+              "Description": "REMAINING_WEEK",
+              "SQLDataType": 4,
+              "MinRange": 1.0,
+              "MaxRange": 1.0
+            },
+            {
+              "Name": "RUNNING_TARGET",
+              "SourceColumn": "RUNNING_TARGET",
+              "Description": "RUNNING_TARGET",
+              "SQLDataType": 3,
+              "MinRange": 1.0,
+              "MaxRange": 1.0
+            },
+            {
+              "Name": "FINISHED_DAY_TEST",
+              "SourceColumn": "FINISHED_DAY_TEST",
+              "Description": "FINISHED_DAY_TEST",
+              "SQLDataType": 4,
+              "MinRange": 1.0,
+              "MaxRange": 1.0
+            },
+            {
+              "Name": "FINISHED_DAY_PACK",
+              "SourceColumn": "FINISHED_DAY_PACK",
+              "Description": "FINISHED_DAY_PACK",
+              "SQLDataType": 4,
+              "MinRange": 1.0,
+              "MaxRange": 1.0
+            },
+            {
+              "Name": "REMAINING_DAY",
+              "SourceColumn": "REMAINING_DAY",
+              "Description": "REMAINING_DAY",
+              "SQLDataType": 4,
+              "MinRange": 1.0,
+              "MaxRange": 1.0
+            }
+          ]
+        },
+        "Row": [
+          {
+            "DAY": "Monday",
+            "LOOP_TIME": "07:30:00",
+            "WEEK_TARGET": 69,
+            "FINISHED_WEEK": 1,
+            "REMAINING_WEEK": 68,
+            "RUNNING_TARGET": 1.15,
+            "FINISHED_DAY_TEST": 0,
+            "FINISHED_DAY_PACK": 0,
+            "REMAINING_DAY": 3
+          },
+          {
+            "DAY": "Monday",
+            "LOOP_TIME": "08:30:00",
+            "WEEK_TARGET": 69,
+            "FINISHED_WEEK": 1,
+            "REMAINING_WEEK": 68,
+            "RUNNING_TARGET": 2.30,
+            "FINISHED_DAY_TEST": 2,
+            "FINISHED_DAY_PACK": 1,
+            "REMAINING_DAY": 3
+          },
+          {
+            "DAY": "Monday",
+            "LOOP_TIME": "09:30:00",
+            "WEEK_TARGET": 69,
+            "FINISHED_WEEK": 1,
+            "REMAINING_WEEK": 68,
+            "RUNNING_TARGET": 3.45,
+            "FINISHED_DAY_TEST": 4,
+            "FINISHED_DAY_PACK": 2,
+            "REMAINING_DAY": 3
+          },
+          {
+            "DAY": "Monday",
+            "LOOP_TIME": "10:30:00",
+            "WEEK_TARGET": 69,
+            "FINISHED_WEEK": 1,
+            "REMAINING_WEEK": 68,
+            "RUNNING_TARGET": 4.60,
+            "FINISHED_DAY_TEST": 6,
+            "FINISHED_DAY_PACK": 3,
+            "REMAINING_DAY": 3
+          },
+          {
+            "DAY": "Monday",
+            "LOOP_TIME": "11:30:00",
+            "WEEK_TARGET": 69,
+            "FINISHED_WEEK": 1,
+            "REMAINING_WEEK": 68,
+            "RUNNING_TARGET": 5.75,
+            "FINISHED_DAY_TEST": 8,
+            "FINISHED_DAY_PACK": 4,
+            "REMAINING_DAY": 3
+          },
+          {
+            "DAY": "Monday",
+            "LOOP_TIME": "12:30:00",
+            "WEEK_TARGET": 69,
+            "FINISHED_WEEK": 1,
+            "REMAINING_WEEK": 68,
+            "RUNNING_TARGET": 6.90,
+            "FINISHED_DAY_TEST": 10,
+            "FINISHED_DAY_PACK": 5,
+            "REMAINING_DAY": 3
+          },
+          {
+            "DAY": "Monday",
+            "LOOP_TIME": "13:30:00",
+            "WEEK_TARGET": 69,
+            "FINISHED_WEEK": 1,
+            "REMAINING_WEEK": 68,
+            "RUNNING_TARGET": 8.05,
+            "FINISHED_DAY_TEST": 12,
+            "FINISHED_DAY_PACK": 6,
+            "REMAINING_DAY": 3
+          },
+          {
+            "DAY": "Monday",
+            "LOOP_TIME": "14:30:00",
+            "WEEK_TARGET": 69,
+            "FINISHED_WEEK": 1,
+            "REMAINING_WEEK": 68,
+            "RUNNING_TARGET": 9.20,
+            "FINISHED_DAY_TEST": 14,
+            "FINISHED_DAY_PACK": 7,
+            "REMAINING_DAY": 3
+          },
+          {
+            "DAY": "Monday",
+            "LOOP_TIME": "15:30:00",
+            "WEEK_TARGET": 69,
+            "FINISHED_WEEK": 1,
+            "REMAINING_WEEK": 68,
+            "RUNNING_TARGET": 10.35,
+            "FINISHED_DAY_TEST": 16,
+            "FINISHED_DAY_PACK": 8,
+            "REMAINING_DAY": 3
+          },
+          {
+            "DAY": "Monday",
+            "LOOP_TIME": "16:30:00",
+            "WEEK_TARGET": 69,
+            "FINISHED_WEEK": 1,
+            "REMAINING_WEEK": 68,
+            "RUNNING_TARGET": 11.50,
+            "FINISHED_DAY_TEST": 18,
+            "FINISHED_DAY_PACK": 9,
+            "REMAINING_DAY": 3
+          },
+          {
+            "DAY": "Tuesday",
+            "LOOP_TIME": "07:30:00",
+            "WEEK_TARGET": 69,
+            "FINISHED_WEEK": 1,
+            "REMAINING_WEEK": 68,
+            "RUNNING_TARGET": 12.65,
+            "FINISHED_DAY_TEST": 0,
+            "FINISHED_DAY_PACK": 0,
+            "REMAINING_DAY": 3
+          },
+          {
+            "DAY": "Tuesday",
+            "LOOP_TIME": "08:30:00",
+            "WEEK_TARGET": 69,
+            "FINISHED_WEEK": 1,
+            "REMAINING_WEEK": 68,
+            "RUNNING_TARGET": 13.80,
+            "FINISHED_DAY_TEST": 1,
+            "FINISHED_DAY_PACK": 1,
+            "REMAINING_DAY": 3
+          },
+          {
+            "DAY": "Tuesday",
+            "LOOP_TIME": "09:30:00",
+            "WEEK_TARGET": 69,
+            "FINISHED_WEEK": 1,
+            "REMAINING_WEEK": 68,
+            "RUNNING_TARGET": 14.95,
+            "FINISHED_DAY_TEST": 3,
+            "FINISHED_DAY_PACK": 2,
+            "REMAINING_DAY": 3
+          },
+          {
+            "DAY": "Tuesday",
+            "LOOP_TIME": "10:30:00",
+            "WEEK_TARGET": 69,
+            "FINISHED_WEEK": 1,
+            "REMAINING_WEEK": 68,
+            "RUNNING_TARGET": 16.10,
+            "FINISHED_DAY_TEST": 5,
+            "FINISHED_DAY_PACK": 0,
+            "REMAINING_DAY": 3
+          },
+          {
+            "DAY": "Tuesday",
+            "LOOP_TIME": "11:30:00",
+            "WEEK_TARGET": 69,
+            "FINISHED_WEEK": 1,
+            "REMAINING_WEEK": 68,
+            "RUNNING_TARGET": 17.25,
+            "FINISHED_DAY_TEST": 0,
+            "FINISHED_DAY_PACK": 0,
+            "REMAINING_DAY": 3
+          },
+          {
+            "DAY": "Tuesday",
+            "LOOP_TIME": "12:30:00",
+            "WEEK_TARGET": 69,
+            "FINISHED_WEEK": 1,
+            "REMAINING_WEEK": 68,
+            "RUNNING_TARGET": 18.40,
+            "FINISHED_DAY_TEST": 0,
+            "FINISHED_DAY_PACK": 0,
+            "REMAINING_DAY": 3
+          },
+          {
+            "DAY": "Tuesday",
+            "LOOP_TIME": "13:30:00",
+            "WEEK_TARGET": 69,
+            "FINISHED_WEEK": 1,
+            "REMAINING_WEEK": 68,
+            "RUNNING_TARGET": 19.55,
+            "FINISHED_DAY_TEST": 0,
+            "FINISHED_DAY_PACK": 0,
+            "REMAINING_DAY": 3
+          },
+          {
+            "DAY": "Tuesday",
+            "LOOP_TIME": "14:30:00",
+            "WEEK_TARGET": 69,
+            "FINISHED_WEEK": 1,
+            "REMAINING_WEEK": 68,
+            "RUNNING_TARGET": 20.70,
+            "FINISHED_DAY_TEST": 0,
+            "FINISHED_DAY_PACK": 0,
+            "REMAINING_DAY": 3
+          },
+          {
+            "DAY": "Tuesday",
+            "LOOP_TIME": "15:30:00",
+            "WEEK_TARGET": 69,
+            "FINISHED_WEEK": 1,
+            "REMAINING_WEEK": 68,
+            "RUNNING_TARGET": 21.85,
+            "FINISHED_DAY_TEST": 0,
+            "FINISHED_DAY_PACK": 0,
+            "REMAINING_DAY": 3
+          },
+          {
+            "DAY": "Tuesday",
+            "LOOP_TIME": "16:30:00",
+            "WEEK_TARGET": 69,
+            "FINISHED_WEEK": 1,
+            "REMAINING_WEEK": 68,
+            "RUNNING_TARGET": 23.00,
+            "FINISHED_DAY_TEST": 0,
+            "FINISHED_DAY_PACK": 0,
+            "REMAINING_DAY": 3
+          },
+          {
+            "DAY": "Wednesday",
+            "LOOP_TIME": "07:30:00",
+            "WEEK_TARGET": 69,
+            "FINISHED_WEEK": 1,
+            "REMAINING_WEEK": 68,
+            "RUNNING_TARGET": 24.15,
+            "FINISHED_DAY_TEST": 0,
+            "FINISHED_DAY_PACK": 0,
+            "REMAINING_DAY": 3
+          },
+          {
+            "DAY": "Wednesday",
+            "LOOP_TIME": "08:30:00",
+            "WEEK_TARGET": 69,
+            "FINISHED_WEEK": 1,
+            "REMAINING_WEEK": 68,
+            "RUNNING_TARGET": 25.30,
+            "FINISHED_DAY_TEST": 0,
+            "FINISHED_DAY_PACK": 0,
+            "REMAINING_DAY": 3
+          },
+          {
+            "DAY": "Wednesday",
+            "LOOP_TIME": "09:30:00",
+            "WEEK_TARGET": 69,
+            "FINISHED_WEEK": 1,
+            "REMAINING_WEEK": 68,
+            "RUNNING_TARGET": 26.45,
+            "FINISHED_DAY_TEST": 0,
+            "FINISHED_DAY_PACK": 0,
+            "REMAINING_DAY": 3
+          },
+          {
+            "DAY": "Wednesday",
+            "LOOP_TIME": "10:30:00",
+            "WEEK_TARGET": 69,
+            "FINISHED_WEEK": 1,
+            "REMAINING_WEEK": 68,
+            "RUNNING_TARGET": 27.60,
+            "FINISHED_DAY_TEST": 0,
+            "FINISHED_DAY_PACK": 0,
+            "REMAINING_DAY": 3
+          },
+          {
+            "DAY": "Wednesday",
+            "LOOP_TIME": "11:30:00",
+            "WEEK_TARGET": 69,
+            "FINISHED_WEEK": 1,
+            "REMAINING_WEEK": 68,
+            "RUNNING_TARGET": 28.75,
+            "FINISHED_DAY_TEST": 0,
+            "FINISHED_DAY_PACK": 0,
+            "REMAINING_DAY": 3
+          },
+          {
+            "DAY": "Wednesday",
+            "LOOP_TIME": "12:30:00",
+            "WEEK_TARGET": 69,
+            "FINISHED_WEEK": 1,
+            "REMAINING_WEEK": 68,
+            "RUNNING_TARGET": 29.90,
+            "FINISHED_DAY_TEST": 0,
+            "FINISHED_DAY_PACK": 0,
+            "REMAINING_DAY": 3
+          },
+          {
+            "DAY": "Wednesday",
+            "LOOP_TIME": "13:30:00",
+            "WEEK_TARGET": 69,
+            "FINISHED_WEEK": 1,
+            "REMAINING_WEEK": 68,
+            "RUNNING_TARGET": 31.05,
+            "FINISHED_DAY_TEST": 0,
+            "FINISHED_DAY_PACK": 0,
+            "REMAINING_DAY": 3
+          },
+          {
+            "DAY": "Wednesday",
+            "LOOP_TIME": "14:30:00",
+            "WEEK_TARGET": 69,
+            "FINISHED_WEEK": 1,
+            "REMAINING_WEEK": 68,
+            "RUNNING_TARGET": 32.20,
+            "FINISHED_DAY_TEST": 0,
+            "FINISHED_DAY_PACK": 0,
+            "REMAINING_DAY": 3
+          },
+          {
+            "DAY": "Wednesday",
+            "LOOP_TIME": "15:30:00",
+            "WEEK_TARGET": 69,
+            "FINISHED_WEEK": 1,
+            "REMAINING_WEEK": 68,
+            "RUNNING_TARGET": 33.35,
+            "FINISHED_DAY_TEST": 0,
+            "FINISHED_DAY_PACK": 0,
+            "REMAINING_DAY": 3
+          },
+          {
+            "DAY": "Wednesday",
+            "LOOP_TIME": "16:30:00",
+            "WEEK_TARGET": 69,
+            "FINISHED_WEEK": 1,
+            "REMAINING_WEEK": 68,
+            "RUNNING_TARGET": 34.50,
+            "FINISHED_DAY_TEST": 0,
+            "FINISHED_DAY_PACK": 0,
+            "REMAINING_DAY": 3
+          },
+          {
+            "DAY": "Thursday",
+            "LOOP_TIME": "07:30:00",
+            "WEEK_TARGET": 69,
+            "FINISHED_WEEK": 1,
+            "REMAINING_WEEK": 68,
+            "RUNNING_TARGET": 35.65,
+            "FINISHED_DAY_TEST": 0,
+            "FINISHED_DAY_PACK": 0,
+            "REMAINING_DAY": 3
+          },
+          {
+            "DAY": "Thursday",
+            "LOOP_TIME": "08:30:00",
+            "WEEK_TARGET": 69,
+            "FINISHED_WEEK": 1,
+            "REMAINING_WEEK": 68,
+            "RUNNING_TARGET": 36.80,
+            "FINISHED_DAY_TEST": 0,
+            "FINISHED_DAY_PACK": 0,
+            "REMAINING_DAY": 3
+          },
+          {
+            "DAY": "Thursday",
+            "LOOP_TIME": "09:30:00",
+            "WEEK_TARGET": 69,
+            "FINISHED_WEEK": 1,
+            "REMAINING_WEEK": 68,
+            "RUNNING_TARGET": 37.95,
+            "FINISHED_DAY_TEST": 0,
+            "FINISHED_DAY_PACK": 0,
+            "REMAINING_DAY": 3
+          },
+          {
+            "DAY": "Thursday",
+            "LOOP_TIME": "10:30:00",
+            "WEEK_TARGET": 69,
+            "FINISHED_WEEK": 1,
+            "REMAINING_WEEK": 68,
+            "RUNNING_TARGET": 39.10,
+            "FINISHED_DAY_TEST": 0,
+            "FINISHED_DAY_PACK": 0,
+            "REMAINING_DAY": 3
+          },
+          {
+            "DAY": "Thursday",
+            "LOOP_TIME": "11:30:00",
+            "WEEK_TARGET": 69,
+            "FINISHED_WEEK": 1,
+            "REMAINING_WEEK": 68,
+            "RUNNING_TARGET": 40.25,
+            "FINISHED_DAY_TEST": 0,
+            "FINISHED_DAY_PACK": 0,
+            "REMAINING_DAY": 3
+          },
+          {
+            "DAY": "Thursday",
+            "LOOP_TIME": "12:30:00",
+            "WEEK_TARGET": 69,
+            "FINISHED_WEEK": 1,
+            "REMAINING_WEEK": 68,
+            "RUNNING_TARGET": 41.40,
+            "FINISHED_DAY_TEST": 0,
+            "FINISHED_DAY_PACK": 0,
+            "REMAINING_DAY": 3
+          },
+          {
+            "DAY": "Thursday",
+            "LOOP_TIME": "13:30:00",
+            "WEEK_TARGET": 69,
+            "FINISHED_WEEK": 1,
+            "REMAINING_WEEK": 68,
+            "RUNNING_TARGET": 42.55,
+            "FINISHED_DAY_TEST": 0,
+            "FINISHED_DAY_PACK": 0,
+            "REMAINING_DAY": 3
+          },
+          {
+            "DAY": "Thursday",
+            "LOOP_TIME": "14:30:00",
+            "WEEK_TARGET": 69,
+            "FINISHED_WEEK": 1,
+            "REMAINING_WEEK": 68,
+            "RUNNING_TARGET": 43.70,
+            "FINISHED_DAY_TEST": 0,
+            "FINISHED_DAY_PACK": 0,
+            "REMAINING_DAY": 3
+          },
+          {
+            "DAY": "Thursday",
+            "LOOP_TIME": "15:30:00",
+            "WEEK_TARGET": 69,
+            "FINISHED_WEEK": 1,
+            "REMAINING_WEEK": 68,
+            "RUNNING_TARGET": 44.85,
+            "FINISHED_DAY_TEST": 0,
+            "FINISHED_DAY_PACK": 0,
+            "REMAINING_DAY": 3
+          },
+          {
+            "DAY": "Thursday",
+            "LOOP_TIME": "16:30:00",
+            "WEEK_TARGET": 69,
+            "FINISHED_WEEK": 1,
+            "REMAINING_WEEK": 68,
+            "RUNNING_TARGET": 46.00,
+            "FINISHED_DAY_TEST": 0,
+            "FINISHED_DAY_PACK": 0,
+            "REMAINING_DAY": 3
+          },
+          {
+            "DAY": "Friday",
+            "LOOP_TIME": "07:30:00",
+            "WEEK_TARGET": 69,
+            "FINISHED_WEEK": 1,
+            "REMAINING_WEEK": 68,
+            "RUNNING_TARGET": 47.15,
+            "FINISHED_DAY_TEST": 0,
+            "FINISHED_DAY_PACK": 0,
+            "REMAINING_DAY": 7
+          },
+          {
+            "DAY": "Friday",
+            "LOOP_TIME": "08:30:00",
+            "WEEK_TARGET": 69,
+            "FINISHED_WEEK": 1,
+            "REMAINING_WEEK": 68,
+            "RUNNING_TARGET": 48.30,
+            "FINISHED_DAY_TEST": 0,
+            "FINISHED_DAY_PACK": 0,
+            "REMAINING_DAY": 7
+          },
+          {
+            "DAY": "Friday",
+            "LOOP_TIME": "09:30:00",
+            "WEEK_TARGET": 69,
+            "FINISHED_WEEK": 1,
+            "REMAINING_WEEK": 68,
+            "RUNNING_TARGET": 49.45,
+            "FINISHED_DAY_TEST": 0,
+            "FINISHED_DAY_PACK": 0,
+            "REMAINING_DAY": 7
+          },
+          {
+            "DAY": "Friday",
+            "LOOP_TIME": "10:30:00",
+            "WEEK_TARGET": 69,
+            "FINISHED_WEEK": 1,
+            "REMAINING_WEEK": 68,
+            "RUNNING_TARGET": 50.60,
+            "FINISHED_DAY_TEST": 0,
+            "FINISHED_DAY_PACK": 0,
+            "REMAINING_DAY": 7
+          },
+          {
+            "DAY": "Friday",
+            "LOOP_TIME": "11:30:00",
+            "WEEK_TARGET": 69,
+            "FINISHED_WEEK": 1,
+            "REMAINING_WEEK": 68,
+            "RUNNING_TARGET": 51.75,
+            "FINISHED_DAY_TEST": 0,
+            "FINISHED_DAY_PACK": 0,
+            "REMAINING_DAY": 7
+          },
+          {
+            "DAY": "Friday",
+            "LOOP_TIME": "12:30:00",
+            "WEEK_TARGET": 69,
+            "FINISHED_WEEK": 1,
+            "REMAINING_WEEK": 68,
+            "RUNNING_TARGET": 52.90,
+            "FINISHED_DAY_TEST": 0,
+            "FINISHED_DAY_PACK": 0,
+            "REMAINING_DAY": 7
+          }
+        ]
+      }
+    ]
+  }
+}

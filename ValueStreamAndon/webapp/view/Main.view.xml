@@ -1,0 +1,120 @@
+<mvc:View controllerName="com.web.ValueStreamAndon.controller.Main" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns:core="sap.ui.core"
+	xmlns:layout="sap.ui.layout" xmlns:form="sap.ui.layout.form" xmlns:viz.feeds="sap.viz.ui5.controls.common.feeds" xmlns="sap.m"
+	xmlns:viz="sap.viz.ui5.controls" xmlns:viz.data="sap.viz.ui5.data" height="100%">
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="VALUE STREAM ANDON">
+					<content>
+						<!--<Image id="myImage" src="{./images/SplashScreen.gif}" densityAware="false" width="{/imageWidth}"></Image>-->
+						<layout:VerticalLayout id="containerLayout" width="100%">
+							<layout:BlockLayout id="BlockLayout" background="{/selectedBackground}">
+								<layout:BlockLayoutRow accentCells="Accent1">
+									<layout:BlockLayoutCell id="Accent1" backgroundColorSet="{/colorSet}" backgroundColorShade="{/shades/1}">
+										<viz:VizFrame id="rotorStatorVizFrame" uiConfig="{applicationSet:'fiori'}" height='100%' width="100%" vizType='bar'>
+											<viz:dataset>
+												<viz.data:FlattenedDataset data="{stackedBarData>/Rowsets/Rowset/0/Row}">
+													<viz.data:dimensions>
+														<viz.data:DimensionDefinition name="stackName" value="{stackedBarData>stackName}"/>
+													</viz.data:dimensions>
+													<viz.data:measures>
+														<viz.data:MeasureDefinition name="Quantity" value="{stackedBarData>val}"/>
+													</viz.data:measures>
+												</viz.data:FlattenedDataset>
+											</viz:dataset>
+											<viz:feeds>
+												<viz.feeds:FeedItem uid="valueAxis" type="Measure" values="Quantity"/>
+												<viz.feeds:FeedItem uid="categoryAxis" type="Dimension" values="stackName"/>
+											</viz:feeds>
+										</viz:VizFrame>
+									</layout:BlockLayoutCell>
+									<layout:BlockLayoutCell title="Daily Targets">
+										<layout:VerticalLayout id="infoContainerLayout" width="100%">
+											<Panel>
+												<layout:BlockLayout id="targets" background="{/selectedBackground}">
+													<layout:BlockLayoutRow>
+														<layout:BlockLayoutCell title="Running Target" titleAlignment="Center">
+															<Text id="runningTarget" text="0"/>
+														</layout:BlockLayoutCell>
+														<layout:BlockLayoutCell title="Actual Output" titleAlignment="Center">
+															<Text id="actualOutput" text="0"/>
+														</layout:BlockLayoutCell>
+													</layout:BlockLayoutRow>
+												</layout:BlockLayout>
+												<layout:VerticalLayout id="targetDiff" width="100%">
+													<layout:BlockLayout id="BlockLayout3" background="{/selectedBackground}">
+														<layout:BlockLayoutRow>
+															<layout:BlockLayoutCell title="Difference" titleAlignment="Center">
+																<Text id="difference" text="0"/>
+															</layout:BlockLayoutCell>
+														</layout:BlockLayoutRow>
+													</layout:BlockLayout>
+												</layout:VerticalLayout>
+											</Panel>
+											<form:SimpleForm>
+												<Label text="Target for the Week" design="Bold"/>
+												<Text id="weekTar" text="{lineGraphData>/Rowsets/Rowset/0/Row/0/WEEK_TARGET}"/>
+												<Label text="Remaining QTY" design="Bold"/>
+												<Text id="remainingQTY" text="{lineGraphData>/Rowsets/Rowset/0/Row/0/REMAINING_WEEK}"/>
+											</form:SimpleForm>
+											<Panel>
+												<Text id="info"
+													text="Target for the week calculated based on loaded quantity by the customer and not on cell capacity. This is a measure for On Time Delivery and not Cell Efficiency."
+													textAlign="Center"/>
+											</Panel>
+										</layout:VerticalLayout>
+									</layout:BlockLayoutCell>
+									<layout:BlockLayoutCell titleAlignment="End">
+										<viz:VizFrame id="onTimeDeliveryVizFrame" uiConfig="{applicationSet:'fiori'}" height='100%' width="100%" vizType='stacked_column'>
+											<viz:dataset>
+												<viz.data:FlattenedDataset data="{stackedColumnData>/Rowsets/Rowset/0/Row}">
+													<viz.data:dimensions>
+														<viz.data:DimensionDefinition name="Total" value="{stackedColumnData>Total}"/>
+													</viz.data:dimensions>
+													<viz.data:measures>
+														<viz.data:MeasureDefinition name="Required for OTD" value="{stackedColumnData>One}"/>
+														<viz.data:MeasureDefinition name="Overdue" value="{stackedColumnData>Two}"/>
+														<viz.data:MeasureDefinition name="Built Ahead" value="{stackedColumnData>Ahead}"/>
+														<viz.data:MeasureDefinition name="Completed" value="{stackedColumnData>Complete}"/>
+														<viz.data:MeasureDefinition name="To Be Completed" value="{stackedColumnData>NotComplete}"/>
+													</viz.data:measures>
+												</viz.data:FlattenedDataset>
+											</viz:dataset>
+											<viz:feeds>
+												<viz.feeds:FeedItem uid="valueAxis" type="Measure" values="Built Ahead,Overdue,Required for OTD,To Be Completed,Completed"/>
+												<viz.feeds:FeedItem uid="categoryAxis" type="Dimension" values="Total"/>
+											</viz:feeds>
+										</viz:VizFrame>
+									</layout:BlockLayoutCell>
+								</layout:BlockLayoutRow>
+								<layout:BlockLayoutRow>
+									<layout:BlockLayoutCell>
+										<viz:VizFrame id="outputVizFrame" uiConfig="{applicationSet:'fiori'}" height='100%' width="100%" vizType='line'>
+											<viz:dataset>
+												<viz.data:FlattenedDataset data="{lineGraphData>/Rowsets/Rowset/0/Row}">
+													<viz.data:dimensions>
+														<viz.data:DimensionDefinition name="Time" value="{LOOP_TIME}"/>
+														<viz.data:DimensionDefinition name="Weekday" value="{DAY}"/>
+													</viz.data:dimensions>
+													<viz.data:measures>
+														<viz.data:MeasureDefinition name="Running Target" value="{lineGraphData>RUNNING_TARGET}"/>
+														<viz.data:MeasureDefinition name="Finished Test" value="{lineGraphData>FINISHED_DAY_TEST}"/>
+														<viz.data:MeasureDefinition name="Finished Pack" value="{lineGraphData>FINISHED_DAY_PACK}"/>
+													</viz.data:measures>
+												</viz.data:FlattenedDataset>
+											</viz:dataset>
+											<viz:feeds>
+												<viz.feeds:FeedItem id='valueAxisFeed' uid="valueAxis" type="Measure" values="Running Target,Finished Test,Finished Pack"/>
+												<viz.feeds:FeedItem id='categoryAxisFeed' uid="categoryAxis" type="Dimension" values="Weekday,Time"/>
+											</viz:feeds>
+										</viz:VizFrame>
+									</layout:BlockLayoutCell>
+								</layout:BlockLayoutRow>
+							</layout:BlockLayout>
+						</layout:VerticalLayout>
+					</content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>

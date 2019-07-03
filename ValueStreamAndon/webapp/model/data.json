@@ -1,0 +1,87 @@
+{
+	"Rowsets": {
+		"DateCreated": "2019-04-12T11:28:15",
+		"Version": "15.2 SP3 Patch 5 (24-Jan-2019)",
+		"StartDate": "2019-04-12T10:28:15+0100",
+		"EndDate": "2019-04-12T11:28:15+0100",
+		"CachedTime": "",
+		"Rowset": [
+			{
+			"Columns": {
+				"Column": [{
+					"Name": "ID",
+					"SourceColumn": "ID",
+					"Description": "ID",
+					"SQLDataType": 12,
+					"MinRange": 0.5,
+					"MaxRange": 0.5
+				}, {
+					"Name": "One",
+					"SourceColumn": "One",
+					"Description": "One",
+					"SQLDataType": 8,
+					"MinRange": 1.0,
+					"MaxRange": 1.0
+				}, {
+					"Name": "Two",
+					"SourceColumn": "Two",
+					"Description": "Two",
+					"SQLDataType": 8,
+					"MinRange": 1.0,
+					"MaxRange": 1.0
+				}, {
+					"Name": "Three_Plus",
+					"SourceColumn": "Three_Plus",
+					"Description": "Three_Plus",
+					"SQLDataType": 8,
+					"MinRange": 1.0,
+					"MaxRange": 1.0
+				}, {
+					"Name": "Total",
+					"SourceColumn": "Total",
+					"Description": "Total",
+					"SQLDataType": 8,
+					"MinRange": 1.0,
+					"MaxRange": 1.0
+				}, {
+					"Name": "Target",
+					"SourceColumn": "Target",
+					"Description": "Target",
+					"SQLDataType": 4,
+					"MinRange": 1.0,
+					"MaxRange": 1.0
+				}, {
+					"Name": "Date_key",
+					"SourceColumn": "Date_key",
+					"Description": "Date_key",
+					"SQLDataType": 12,
+					"MinRange": 1.0,
+					"MaxRange": 1.0
+				}, {
+					"Name": "line",
+					"SourceColumn": "line",
+					"Description": "line",
+					"SQLDataType": 12,
+					"MinRange": 1.0,
+					"MaxRange": 1.0
+				}]
+			},
+			"Row": [{
+				"ID": "1",
+				"stackName": "Matched Rotors & Stators",
+				"val": 15,
+				"type": "Rotor"
+			}, {
+				"ID": "2",
+				"stackName": "Un-Matched Rotors",
+				"val": 12,
+				"type": "Rotor"
+			}, {
+				"ID": "3",
+				"stackName": "Un-Matched Stators",
+				"val": 21,
+				"type": "Stator"
+			}]
+		}]
+	}
+}
